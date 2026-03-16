@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Irish Dreamin' 24</title>
+		<title>Irish Dreamin' 26</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -36,12 +36,8 @@
 					===========================================================
 					TITLE
 				-->
-				<section class="title-slide has-footer circle-bottom" data-background-image="assets/imgs/title.png" data-background-size="contain">
-					<h1>Salesforce's best kept secret,<br/>Agentforce</h1>
-					<h2>Todd Halfpenny</h2>
-				</section>
-				<section class="title-slide has-footer circle-bottom" data-background-image="assets/imgs/title.png" data-background-size="contain">
-					<h1>Build your first Code Builder<br/>and VS Code Extension</h1>
+				<section class="title-slide has-footer circle-right" data-background-image="assets/imgs/title.png" data-background-size="contain">
+					<h1>Browser Dev Tools you wish you'd known about sooner</h1>
 					<h2>Todd Halfpenny</h2>
 					<aside class="notes">
 						<ul>
@@ -82,11 +78,8 @@
 				<section class="has-footer circle-bottom">
 					<h1>Agenda</h1>
 					<ul>
-						<li class="fragment">Extensions</li>
-						<li class="fragment">Our use case</li>
-						<li class="fragment">Build</li>
-						<li class="fragment">Publish</li>
-						<!-- <li class="fragment">Resources</li> -->
+						<li class="fragment">Browser Dev Tools - what are they</li>
+						<li class="fragment">DEMOs</li>
 						<li class="fragment">Q&amp;A</li>
 					</ul>
 					<aside class="notes">
@@ -95,6 +88,7 @@
 						</ul>
 					</aside>
 				</section>
+
 
 				<!-- 
 					======================================f=====================
@@ -105,32 +99,28 @@
 				</section>
 				<section class="fullvideo" class="fullvideo circle-bottom"
 					data-background-size="contain"
-					data-background-video ="assets/vids/hi-todd-02.mp4" >
+					data-background-video ="assets/vids/other-todd.m4v" >
 					<aside class="notes">
 						<ul>
-							<li></li>
+							<li>4:30</li>
 						</ul>
 					</aside>					
 				</section>
 
 
-
 				<!-- 
 					===========================================================
-					EXTENSIONS
+					BROWSER DEV TOOLS
 				-->
 				<section class="has-footer circle-bottom has-footer">
-					<h1>So... extensions you say?</h1>
+					<h1>So... browser developer tools eh?</h1>
 				</section>
 				<section class="fullvideo" class="fullvideo"
 				data-background-size="contain"
-					data-background-video ="assets/vids/id-what-are-extensions-04.mp4" >
+					data-background-video ="assets/vids/browser-dev-tools-01.m4v" >
 					<aside class="notes">
 						<ul>
-							<li>What are they</li>
-							<li>Examples</li>
-							<li>What can they do?</li>
-							<li>Why create one of our own</li>
+							<li></li>
 						</ul>
 					</aside>
 					
@@ -139,504 +129,414 @@
 
 				<!-- 
 					===========================================================
-					WHAT ARE WE GOING TO BUILD
+					FIRST TIP
 				-->
-				<section class="has-footer has-header-left circle-bottom" >
-					<h1>And just what are we going to build?</h1>
-					<div class="r-stack">
-						<img
-							class="fragment screenshot center"
-							src="assets/imgs/id-status-01.png"
-						/>
-						<img
-							class="fragment screenshot center"
-							src="assets/imgs/id-status-02.png"
-						/>
-						<img
-							class="fragment screenshot center"
-							src="assets/imgs/id-status-03.png"
-						/>
-					</div>
-					<aside class="notes">
-						<ul>
-							<li>Hands up if you're familiar with this site</li>
-							<li>There is an API for all this</li>
-							<li></li>
-							<li></li>
-						</ul>
-					</aside>
-					
-				</section>
-
-				<!-- 
-					===========================================================
-					LETS GET STARTED
-				-->
-				<section class="has-footer has-header-left circle-bottom">
-					<h1>Let's get started</h1>
-					<div class="r-stack">
-						<img
-							class="fragment screenshot center"
-							src="assets/imgs/id-started-01.png"
-						/>
-						<img
-							class="fragment screenshot center"
-							src="assets/imgs/id-started-02.png"
-						/>
-					</div>
-					<aside class="notes">
-						<ul>
-							<li>What do we need to build tools?</li>
-						</ul>
-					</aside>					
-				</section>
 				<section class="has-footer circle-bottom has-footer">
-					<h1>INSTALL THE TOOLS!!</h1>
-						
-					<pre ><code class="language-yaml">
-						npm install -g yo generator-code vsce 
-						</code></pre>
-					<aside class="notes">
-						<ul>
-							<li>What do we need to build tools?</li>
-						</ul>
-					</aside>					
+					<h1>OK, shall we make a bet?</h1>
 				</section>
 				<section class="fullvideo" class="fullvideo"
-				  data-background-size="contain"
-					data-background-video ="assets/vids/getting-started.mp4" >
+				data-background-size="contain"
+					data-background-video ="assets/vids/browser-dev-tools-02.m4v" >
 					<aside class="notes">
 						<ul>
 							<li></li>
 						</ul>
-					</aside>					
+					</aside>			
 				</section>
-				<section class="fullvideo" class="fullvideo"
-				  data-background-size="contain"
-					data-background-video ="assets/vids/hello-world-02.mp4" >
+
+
+
+				<!-- 
+					===========================================================
+					CONSOLE 1
+				-->
+				<section class="has-footer circle-right has-footer">
+					<h1>The console tab</h1>
+					<img class="screenshot fragment" src="assets/imgs/console-log.png" />
 					<aside class="notes">
 						<ul>
-							<li></li>
+							<li>Can access a JavaScript environment</li>
+							<li>interact with our page</li>
+							<li>See any output, warnings, errors, etc</li>
+							<li>Let's have a look at </li>
 						</ul>
-					</aside>					
+					</aside>	
 				</section>
 
 
 				<!-- 
 					===========================================================
-					WHAT ABOUT OUR USE CASE
+					OUR CODE
 				-->
-				<section class="has-footer has-header circle-bottom">
-					<h1>What about our use case?</h1>
-				</section>
-				<section class="has-footer has-header circle-right">
-						<h1 class="filename">package.json</h1>
-						<pre class="padding"><code class="language-json" data-trim data-line-numbers="0|8-11">
-...						
-"contributes": {
-	"commands": [
-		{
-			"command": "sf-status.helloWorld",
-			"title": "ID: Hello"
-		},
-		{
-			"command": "sf-status.getStatus",
-			"title": "Get Org Status"
-		}
-	]
-}
-...					
-						</code></pre>
-					<aside class="notes">
-						<ul>
-							<li>Think about it</li>
-							<li>Iterative</li>
-						</ul>
-					</aside>		
-				</section>
-				<section class="has-footer has-header circle-right">
-					<h1 class="filename">extension.ts</h1>
-						<pre><code class="language-typescript" data-trim data-line-numbers="0|3-9|6-7|13-22">
-...	
+				<section class="has-footer circle-bottom has-footer">
+					<h1>Our LWC</h1>
+					<pre class="padding"><code class="language-javascript" data-line-numbers>import getContactList from 
+  '@salesforce/apex/ContactController.getContactList';
 
-const disposableGetStatus = commands.registerCommand(
-	'sf-status.getStatus',
-	async () => {
-		const instance = await showInputBox();
-		console.log(`Instance: ${instance}`);
+...
+
+async handleLoad() {
+	try {
+
+		this.contacts = await getContactList();
+
 	}
-);
-
-...			
-...
-
-async function showInputBox() {
-  const prompt = "Please enter an instance key and hit [enter]";
-  const result = await window.showInputBox({
-    title: "Org Instance:",
-    prompt: prompt,
-    placeHolder: "For example: SWE98",
-  });
-  return result;
 }
-
-...
-						</code></pre>
+					</code></pre>
 					<aside class="notes">
 						<ul>
-							<li>Think about it</li>
-							<li>Iterative</li>
+							<li>Can access a JavaScript environment</li>
+							<li>interact with our page</li>
+							<li>See any output, warnings, errors, etc</li>
+							<li>Let's have a look at </li>
 						</ul>
-					</aside>		
-				</section>
-				<section class="fullvideo" class="fullvideo"
-				data-background-size="contain"
-					data-background-video ="assets/vids/input-02.mp4">
-					<aside class="notes">
-						<ul>
-							<li></li>
-						</ul>
-					</aside>					
+					</aside>	
 				</section>
 
 
 				<!-- 
 					===========================================================
-					CALL THE API
+					.TIME()
 				-->
-				<section class="has-footer has-header circle-right">
-					<h1 class="filename">status.service.ts</h1>
-						<pre class="padding"><code class="language-typescript" data-trim data-line-numbers="0|3|4|5-6|">
+				<section class="has-footer circle-bottom has-footer" data-transition="none">
+					<h1>console.time()</h1>
+					<pre class="padding"><code class="language-javascript" data-line-numbers="8,10">import getContactList from 
+  '@salesforce/apex/ContactController.getContactList';
+
 ...
 
-export async function instanceStatus(instance: string) {
-		const uri = `${API_ENDPOINT}instances/${instance}/status`;
-		const response = await fetch(uri);
-		return await response.json();
+async handleLoad() {
+	try {
+		console.time('getContactList');
+		this.contacts = await getContactList();
+		console.timeEnd('getContactList');
+	}
 }
-
-...
-</code></pre>
-					<aside class="notes">
-						<ul>
-							<li>Got new service</li>
-							<li></li>
-						</ul>
-					</aside>		
+					</code></pre>
 				</section>
 				<section class="fullvideo" class="fullvideo"
 				data-background-size="contain"
-					data-background-video ="assets/vids/status-02.mp4">
+					data-background-video ="assets/vids/browser-dev-tools-03.m4v" >
 					<aside class="notes">
 						<ul>
 							<li></li>
 						</ul>
-					</aside>					
+					</aside>			
 				</section>
 
 
 				<!-- 
 					===========================================================
-					OUTPUT CHANNELS
+					.COUNT()
 				-->
-				<section class="has-footer has-header circle-bottom">
-					<h1>That's all very good, but...</h1>
-					<div class="fragment">
-					<p class="filename">log.service.ts</p>
-					<pre class="short7 padding"><code class="language-typescript" data-trim data-line-numbers="0|1|4-5|10|">
-import { OutputChannel } from "vscode";
-
-export const activate = (context: ExtensionContext): void => {
-  outputChannel = window.createOutputChannel("SF Org Status");
-  outputChannel.clear();
-};
+				<section class="has-footer circle-bottom has-footer">
+					<h1>console.count()</h1>
+					<pre class="padding"><code class="language-javascript" data-line-numbers="0|9">import getContactList from 
+  '@salesforce/apex/ContactController.getContactList';
 
 ...
 
-outputChannel.appendLine("Hullo again!");
+async handleLoad() {
+	try {
+		console.time('getContactList');
+		console.count('getContactList calls');
+		this.contacts = await getContactList();
+		console.timeEnd('getContactList');
+	}
+}
+					</code></pre>
+				</section>
+				<section class="fullvideo" class="fullvideo"
+				data-background-size="contain"
+					data-background-video ="assets/vids/browser-dev-tools-04.m4v" >
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>			
+				</section>
+
+
+				<!-- 
+					===========================================================
+					.TRACE()
+				-->
+				<section class="has-footer circle-bottom has-footer">
+					<h1>console.trace()</h1>
+					<pre class="padding"><code class="language-javascript" data-line-numbers="0|10">import getContactList from 
+  '@salesforce/apex/ContactController.getContactList';
 
 ...
-						</code></pre>
-					</div>
-					<aside class="notes">
-						<ul>
-							<li>Lots of ways to output info</li>
-							<li>Have you ever run SFDX commands?</li>
-							<li>Let's start with the output channels</li>
-						</ul>
-					</aside>					
+
+async handleLoad() {
+	try {
+		console.time('getContactList');
+		console.count('getContactList calls');
+		console.trace();
+		this.contacts = await getContactList();
+		console.timeEnd('getContactList');
+	}
+}
+					</code></pre>
 				</section>
 				<section class="fullvideo" class="fullvideo"
 				data-background-size="contain"
-					data-background-video ="assets/vids/output.mp4">
+					data-background-video ="assets/vids/browser-dev-tools-05.m4v" >
 					<aside class="notes">
 						<ul>
 							<li></li>
 						</ul>
-					</aside>					
+					</aside>			
 				</section>
 
 
 				<!-- 
 					===========================================================
-					MODAL
+					.TABLE()
 				-->
-				<section class="has-footer has-header circle-bottom">
-					<h1>Better... but not really friendly</h1>
-					<div class="fragment">
-						<p class="filename">extension.ts</p>
-						<pre class="short7 padding"><code class="language-typescript" data-trim data-line-numbers="0|1-2|4-7|9-12">
-const title: instance;
-const statusText = `Status: ${status.status}\n\rEnv:...}`,
-
-const options: MessageOptions = {
-	detail: statusText,
-	modal: true,
-};
-
-return window.showInformationMessage(
-	title,
-	options,
-);
+				<section class="has-footer circle-bottom has-footer">
+					<h1>console.table()</h1>
+					<pre class="padding"><code class="language-javascript" data-line-numbers="0|11">import getContactList from 
+  '@salesforce/apex/ContactController.getContactList';
 
 ...
-							</code></pre>
-					</div>
-					<aside class="notes">
-						<ul>
-							<li>Modals</li>
-						</ul>
-					</aside>					
+
+async handleLoad() {
+	try {
+		console.time('getContactList');
+    ...
+		this.contacts = await getContactList();
+		console.table(this.contacts);
+		console.timeEnd('getContactList');
+	}
+}
+					</code></pre>
 				</section>
 				<section class="fullvideo" class="fullvideo"
 				data-background-size="contain"
-					data-background-video ="assets/vids/modal-02.mp4">
+					data-background-video ="assets/vids/browser-dev-tools-06.m4v" >
 					<aside class="notes">
 						<ul>
 							<li></li>
 						</ul>
-					</aside>					
+					</aside>			
 				</section>
 
 
 				<!-- 
 					===========================================================
-					ALIAS + ORG RECORD
+					.ASSERT()
 				-->
-				<section class="has-footer has-header circle-bottom">
-					<h1>Which instance <em>am</em> I?</h1>
-					<ul class="qanda">
-						<li><span class="question fragment">Does anything know?</span><span class="answer fragment">Your org does</span></li>
-						<li><span class="question fragment">What's the current org?</span><span class="answer fragment">.sfdx/sfdx-config.json</span></li>
-						<li><span class="question fragment">What about the username?</span><span class="answer fragment">~/.sfdx/alias.json</span></li>
-						<li><span class="question fragment">Query an org via a username?</span><span class="answer fragment">Yes... it took some digging</span></li>
-					</ul>
-					<aside class="notes">
-						<ul>
-							<li>Modals</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="has-footer has-header circle-bottom">
-						<h1>Which instance <em>am</em> I?</h1>
-					<div class="">
-						<p class="filename">org.service.ts</p>
-						<pre class="padding"><code class="language-typescript" data-trim data-line-numbers="0|1-2|4-6|7-14">
-import { AuthInfo, Connection } 
-	from "@salesforce/core-bundle";		
-
-const connection = await Connection.create({
-	authInfo: await AuthInfo.create({ username: uname }),
-});
-const rawQueryData = await connection.query(
-	"SELECT 
-		InstanceName,
-		isSandbox,
-		TrialExpirationDate
-	FROM
-		Organization",
-);				
-						</code></pre>
-					</div>
-					<aside class="notes">
-						<ul>
-							<li>Querying the default org</li>
-						</ul>
-					</aside>					
-				</section>
-				<section class="fullvideo" class="fullvideo"
-				data-background-size="contain"
-					data-background-video ="assets/vids/default-instance-02.mp4">
-					<aside class="notes">
-						<ul>
-							<li></li>
-						</ul>
-					</aside>					
-				</section>
-
-
-				<!-- 
-					===========================================================
-					INVOCATION
-				-->
-				<section class="has-footer has-header circle-bottom">
-					<h1>How else can we invoke this?</h1>
-						
-					<div class="fragment">
-						<p class="filename">package.json</p>
-						<pre class=""><code class="language-json">
-"contributes": {
-	"menus": {
-		"explorer/context": [
-			{
-				"command": "sf-status.getStatus",
-				"group": "z_commands"
-			}
-		],
-		"commandPalette": [
-			{
-				"command": "salesforce-status.org-status"
-			}
-		]							
-							</code></pre>
-					</div>
-					<aside class="notes">
-						<ul>
-							<li></li>
-						</ul>
-					</aside>					
-				</section>
-				<section class="fullvideo" class="fullvideo"
-				data-background-size="contain"
-					data-background-video ="assets/vids/menu-02.mp4">
-					<aside class="notes">
-						<ul>
-							<li></li>
-						</ul>
-					</aside>					
-				</section>
-
-
-				<!-- 
-					===========================================================
-					POLISH
-				-->
-				<section class="has-footer has-header circle-right">
-					<h1>Make it sexy</h1>
-					<ul>
-						<li class="fragment">Progress bars for slower transactions</li>
-						<li class="fragment">Use a dedicated panel</li>
-						<li class="fragment">Render using HTML and CSS</li>
-						<li class="fragment">Make it interactive</li>
-					</ul>
-					<aside class="notes">
-						<ul>
-							<li>Improve the UI</li>
-							<li>Like our git extension</li>
-							<li>Highlight important data</li>
-							<li>Link out for more information</li>
-						</ul>
-					</aside>					
-				</section>
-
-				<!-- PROGRESS BARS 01 -->
-				<section class="has-footer circle-bottom">						
-					<h1>Progress Bars (1)</h1>
-						<p class="filename">extension.ts</p>
-						<pre class="short7 padding"><code class="language-javascript"  data-trim data-line-numbers="0|1|3-5|7-10">
-await window.withProgress(
-	{
-		location: ProgressLocation.Notification,
-		title: "I am long running!",
-		cancellable: true,
-	},				
-	(progress, token) => {
-		// Some long running job that returns a promise
-		resolve();
-	}	
-);
-							</code></pre>
-					<aside class="notes">
-						<ul>
-							<li></li>
-						</ul>
-					</aside>					
-				</section>
-				<section class="has-footer has-header circle-bottom">
-					<h1>Progress Bars (1)</h1>
-					<h1></h1>
-					<img class="width60 screenshot center" src="assets/imgs/long-running-01.gif" />
-				</section>
-
-				<!-- PROGRESS BARS 02 -->
-				<section class="has-footer circle-bottom">						
-					<h1>Progress Bars (2)</h1>
-						<p class="filename">extension.ts</p>
-						<pre ><code class="language-javascript"  data-trim data-line-numbers="0|4|6-8|10-12">
-await window.withProgress(
-	...			
-	(progress, token) => {
-		progress.report({ increment: 0 });
-
-    setTimeout(() => {
-      progress.report({increment: 10, message: "still going"});
-    }, 2000);
-
-    setTimeout(() => {
-      progress.report({increment: 40, message: "still going even more"});
-    }, 4000);
-	}	
-);
-							</code></pre>
-					<aside class="notes">
-						<ul>
-							<li></li>
-						</ul>
-					</aside>					
-				</section>
-				<section class="has-footer has-header circle-bottom">
-					<h1>Progress Bars (2)</h1>
-					<h1></h1>
-					<img class="width60 screenshot center" src="assets/imgs/long-running-02.gif" />
-				</section>
-
-
-				<section class="fullvideo" class="fullvideo"
-				data-background-size="contain"
-					data-background-video ="assets/vids/make-it-sexy.mp4">
-					<aside class="notes">
-						<ul>
-							<li></li>
-						</ul>
-					</aside>					
-				</section>
-
-				
-				<!-- 
-					===========================================================
-					PUBLISHING
-				-->
-				<section class="has-footer has-header circle-right">
-					<h1>Publishing</h1>
+				<section class="has-footer circle-right has-footer" data-transition="none">
 					<div class="cols-2">
-						<ul>
-							<li class="fragment">Azure DevOps account</li>
-							<li class="fragment code">npm i -g @vscode/vsce</pre></li>
-							<li class="fragment code">vsce package</pre></li>
-							<li class="fragment">Visual Studio Marketplace</li>
-							<li class="fragment">Register on the Open VSX Registry</li>
-						</ul>
-						<img class="screenshot" src="assets/imgs/published.png" />
+						<h1>Our logs are looking a bit busy now</h1>
 					</div>
+				</section>
+				<section class="has-footer circle-bottom has-footer">
+					<h1>console.assert()</h1>
+					<pre class="padding"><code class="language-javascript" data-line-numbers="0|6-9">
+async handleLoad() {
+	try {
+    ...
+		this.contacts = await getContactList();
+		console.assert(
+			this.contacts.length > 0,
+			'No contacts received'
+		);
+	}
+}
+					</code></pre>
+				</section>
+				<section class="fullvideo" class="fullvideo"
+				data-background-size="contain"
+					data-background-video ="assets/vids/browser-dev-tools-07.m4v" >
 					<aside class="notes">
 						<ul>
-							<li>Azure create an account and register publisher</li>
-							<li>README updates</li>
-							<li>Package plugin</li>
-							<li>Publish</li>
+							<li></li>
 						</ul>
-					</aside>					
+					</aside>			
 				</section>
+
+
+				<!-- 
+					===========================================================
+					.STYLE()
+				-->
+				<section class="has-footer circle-bottom has-footer">
+					<h1>Time for a little experiment</h1>
+					<h1>&nbsp;</h1>
+					<pre id="oneLine" class="padding"><code class="language-javascript">console.log('Cheer if you see this');</code></pre>
+					<aside class="notes">
+						<ul>
+							<li>Our logs are still busy</li>
+							<li>What about everyone elses?</li>
+							<li>In a wired callback</li>
+							<li>unfiltered the logs</li>
+						</ul>
+					</aside>	
+				</section>
+				<section class="fullvideo" class="fullvideo"
+				data-background-size="contain"
+					data-background-video ="assets/vids/browser-dev-tools-08.m4v" >		
+				</section>
+				<section class="has-footer circle-bottom has-footer">
+					<h1>console.log() - with styling</h1>
+					<pre class="padding"><code class="language-javascript">
+console.log(
+	'%c Cheer if you see me!',
+	  'color: black;
+	   font-weight: bold;
+		 background : lightblue;
+		 font-size: 2em;
+		 padding: 1em 1em 1em 120px;
+		 background-image: url(data:image/...'
+);
+					</code></pre>
+				</section>
+
+
+				<!-- 
+					===========================================================
+					.group()
+				-->
+				<section class="has-footer circle-bottom has-footer">
+					<h1>console.group()/groupCollapsed()</h1>
+					<pre class="padding"><code class="language-javascript" data-line-numbers="2,9-10">async handleLoad() {
+	console.groupCollapsed('Apex Imperative Method');
+	try {
+		console.time('getContactList');
+    ...
+		this.contacts = await getContactList();
+		console.timeEnd('getContactList');
+	} ...
+	console.groupEnd()
+	console.table(this.contacts);
+}
+					</code></pre>
+				</section>
+				<section class="fullvideo" class="fullvideo"
+				data-background-size="contain"
+					data-background-video ="assets/vids/browser-dev-tools-09.m4v" >
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>			
+				</section>
+
+
+				<!-- 
+					===========================================================
+					save As Global Var
+				-->
+				<section class="has-footer circle-bottom has-footer">
+					<h1>Interacting with our output</h1>
+				</section>
+				<section class="fullvideo" class="fullvideo"
+				data-background-size="contain"
+					data-background-video ="assets/vids/browser-dev-tools-10.m4v" >
+					<aside class="notes">
+						<ul>
+							<li>copy() - can copy any output like this</li>
+						</ul>
+					</aside>			
+				</section>
+
+
+				<!-- 
+					===========================================================
+					NETWORK + SOURCES
+				-->
+				<section class="has-footer circle-bottom has-footer">
+					<h1>Network Requests,</h1>
+					<h1 class="fragment">and a dip into Sources</h1>
+				</section>
+				<section class="fullvideo" class="fullvideo"
+				data-background-size="contain"
+					data-background-video ="assets/vids/browser-dev-tools-11.m4v" >
+					<aside class="notes">
+						<ul>
+							<li>copy() - can copy any output like this</li>
+						</ul>
+					</aside>			
+				</section>
+
+
+				<!-- 
+					===========================================================
+					BREAKPOINTS & LOGPOINTS
+				-->
+				<section class="has-footer circle-bottom has-footer">
+					<h1>Breakpoints &amp; Logpoints... d'uh!</h1>
+				</section>
+				<section class="fullvideo" class="fullvideo"
+				data-background-size="contain"
+					data-background-video ="assets/vids/browser-dev-tools-12.m4v" >
+					<aside class="notes">
+						<ul>
+							<li>copy() - can copy any output like this</li>
+						</ul>
+					</aside>			
+				</section>
+
+
+				<!-- 
+					===========================================================
+					OVERRIDES
+				-->
+				<section class="has-footer circle-bottom has-footer">
+					<h1>sf deploy start</h1>
+				</section>
+				<section class="has-footer circle-bottom has-footer" data-transition="none">
+					<h1><s>sf deploy start</s></h1>
+				</section>
+				<section class="fullvideo" class="fullvideo"
+				data-background-size="contain"
+					data-background-video ="assets/vids/browser-dev-tools-13.m4v" >
+					<aside class="notes">
+						<ul>
+							<li>copy() - can copy any output like this</li>
+						</ul>
+					</aside>			
+				</section>
+
+
+				<!-- 
+					===========================================================
+					ELEMENTS - 
+				-->
+				<section class="has-footer circle-bottom has-footer">
+					<h1>Let's have a look at the Elements tab</h1>
+				</section>
+				<section class="fullvideo" class="fullvideo"
+				data-background-size="contain"
+					data-background-video ="assets/vids/browser-dev-tools-14.m4v" >
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>			
+				</section>
+
+
+				<!-- 
+					===========================================================
+					COLOUR PICKER - 
+				-->
+				<section class="has-footer circle-bottom has-footer">
+					<h1>We can increase accesibility too</h1>
+				</section>
+				<section class="fullvideo" class="fullvideo"
+				data-background-size="contain"
+					data-background-video ="assets/vids/browser-dev-tools-15.m4v" >
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>			
+				</section>
+
+
 
 				<!-- 
 					===========================================================
@@ -645,9 +545,9 @@ await window.withProgress(
 				<section class="has-footer has-header circle-right">
 					<h1>So, in summary</h1>
 					<ul>
-						<li class="fragment">Extensions can be awesome</li>
-						<li class="fragment">Great set of supporting tools and APIs</li>
-						<li class="fragment">Got an itch, scratch it</li>
+						<li class="fragment">There is a LOT to the dev tools</li>
+						<li class="fragment">Very handy</li>
+						<li class="fragment">They are always improving</li>
 					</ul>
 					<aside class="notes">
 						<ul>
@@ -664,11 +564,9 @@ await window.withProgress(
 				-->
 				<section class="has-footer has-header circle-bottom" >
 					<h1>Resources</h1>
-					<img id="resource-bitly" class="screenshot" src="assets/imgs/bit.ly_VsCodeFTD24.png" />
+					<img id="resource-bitly" class="screenshot" src="assets/imgs/bit.ly_VsCodeFTD24.png" />TODO BITLY
 					<ul>
-						<li>These slides<a target="_blank" href="https://toddhalfpenny.com/slides/ie25" class="href">toddhalfpenny.com/slides/ie25</a></li>
-						<li>VS Code Docs<a target="_blank"  class="href" href="https://code.visualstudio.com/api/get-started/your-first-extension">code.visualstudio.com/api/get-started/your-first-extension</a></li>
-						<li>Our Extension<a target="_blank" class="href" href="https://marketplace.visualstudio.com/items?itemName=ToddHalfpenny.salesforce-status">marketplace.visualstudio.com/items?itemName=ToddHalfpenny.salesforce-status</a></li>
+						<li>These slides<a target="_blank" href="https://toddhalfpenny.com/slides/ie26" class="href">toddhalfpenny.com/slides/ie26</a></li>
 					</ul>
 					<aside class="notes">
 						<ul>
@@ -694,6 +592,8 @@ await window.withProgress(
 					<div class="center">
 					<h2>Thank you</h2>
 					<h2>Any questions?</h2>
+					<h2>TODO - Is this QR code still good?</h2>
+					<img class="screenshot" src="assets/imgs/id-qr-code.png" />
 				</div>
 					<aside class="notes">
 						<ul>

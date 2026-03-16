@@ -78,8 +78,8 @@ section.has-header-left {
 section.circle-right {
     background-image: url(../../assets/imgs/irish-dreamin.png), url(../../assets/imgs/back-circle-right.png);
     background-repeat: no-repeat;
-    background-size: 3em, 47%;
-    background-position: top 1em left 0.5em, right;
+    background-size: 3em, 53%;
+    background-position: top 1em left 0.5em, center right -1em;
 }
 
 
@@ -105,19 +105,24 @@ section.has-footer {
 /** =====================================================
 * TITLE SLIDE 
 *========================================================*/
-section.title-slide :is(h1,h2) {
+section.title-slide h1 {
     background-image: none;
     // color: #2c415b;
     font-weight: bold;
-    height: 1em;
-    margin: 2em auto 0.5em !important;
-    max-width: 70%;
+    font-size: 1.2em;
+    height: unset;
+    // margin: 2em auto 0.5em !important;
+    margin: 30vh 0 0 200px !important;
+    max-width: 35%;
     padding: 0 0 1em 0;
-    text-align: center;
+    text-align: left;
 }
 section.title-slide h2 {
-    // color: #3f5b80;
-    margin-top: 1em !important;
+    color: var(--idLightGreen);
+    font-size: 1em !important;
+    font-weight: normal;
+    margin-left: 200px;
+    // margin-top: 1em !important;
 }
 
 /** =====================================================
@@ -276,7 +281,7 @@ font-size: 1.3em;
 
 .circle-right .center {
     margin-top: 5em;
-    width: 50%;
+    width: 40%;
 }
 
 .dreamin {
@@ -381,10 +386,8 @@ hr {
     max-width: 37%;
 }
 #take-things-further-01 pre,
-#invoice-web-service pre,
-#invoice-target-xml pre,
-#invoice-dw-script pre {
-    height: 570px;
+pre#oneLine {
+    height: 1em;
 }
 img.screenshot {
     box-shadow: var(--accent) 5px 8px 35px;
